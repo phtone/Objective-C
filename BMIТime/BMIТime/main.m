@@ -11,14 +11,19 @@
 
 int main(int argc, const char * argv[]) {
 
-    AppDelegate *appdelegate = [[AppDelegate alloc]init];
-    
-//    [appdelegate setWeihtInKilos:96];
-    [appdelegate setWeightInKilos:96];
-    [appdelegate setHeightInMeters:1.8];
-    
-    
-    float bmi = [appdelegate bodyMassIndex];
-    
-    NSLog(@"Рос и вес персонажа %f, %d идеальная масса тела %f \n", setWeightInKilos, setHeightInMeter, bmi);
+
+    @autoreleasepool {
+        
+        AppDelegate *appdelegate = [[AppDelegate alloc]init];
+        
+        [appdelegate setWeightInKilos:96];
+        [appdelegate setHeightInMeters:1.8];
+        
+        float bmi = [appdelegate bodyMassIndex];
+        
+        NSLog(@"Вес %f рост %d индекс массы тела %f", [appdelegate heightInMeters], [appdelegate weightInKilos], bmi);
+        
+    }
+
 }
+          
