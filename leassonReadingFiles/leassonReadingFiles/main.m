@@ -8,6 +8,8 @@ int main(int argc, const char * argv[]) {
         NSString *nameString;
         NSMutableArray *compareArray = [[NSMutableArray alloc]init];
         
+        NSString *result = @"/Users/phtone/Documents/result.txt";
+        
         nameString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/names.txt" encoding:NSUTF8StringEncoding error:NULL];
         wordString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/words.txt" encoding:NSUTF8StringEncoding error:NULL];
         
@@ -17,8 +19,12 @@ int main(int argc, const char * argv[]) {
         for (NSString *n in names) {
             for (NSString *w in words) {
                 if ([n caseInsensitiveCompare:w] == NSOrderedSame) {
+                    
                     [compareArray addObject:n];
-                    NSLog(@"Совпадают: %@", compareArray);
+
+//                    [n writeToFile:result atomically:YES encoding:NSUTF8StringEncoding error:NULL];
+                    [compareArray writeToFile:result atomically:YES];
+                    
                 } else {
 
                 }
