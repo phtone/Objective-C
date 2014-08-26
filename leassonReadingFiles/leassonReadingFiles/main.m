@@ -4,38 +4,41 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
-        NSString *nameString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/names.txt" encoding:NSUTF8StringEncoding
+        NSString *wordString;
+        NSString *nameString;
+        NSRange namesRange;
+        NSRange wordsRange;
+        
+        nameString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/names.txt" encoding:NSUTF8StringEncoding
                                                             error:NULL];
         
         NSArray *names = [nameString componentsSeparatedByString:@"\n"];
         
-        
         for (NSString *n in names) {
             
+            namesRange = [n rangeOfString:@"AA" options:NSCaseInsensitiveSearch];
+            NSLog(@"Файл name: %@", n);
             
-            NSRange r = [n rangeOfString:@"a" options:NSCaseInsensitiveSearch];
-            NSLog(@"%@", n);
         }
         
-        
-        NSString *wordString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/words.txt" encoding:NSUTF8StringEncoding
+        wordString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/words.txt" encoding:NSUTF8StringEncoding
                                                             error:NULL];
         
         NSArray *words = [wordString componentsSeparatedByString:@"\n"];
         
         for (NSString *w in words) {
-        
-
-            NSRange p = [w rangeOfString:@"AA" options:NSCaseInsensitiveSearch];
-            NSLog(@"%@", w);
+            
+            wordsRange = [w rangeOfString:n options:NSCaseInsensitiveSearch];
+            NSLog(@"Файл word: %@", w);
+            
         }
         
-        if ([w caselnsensitiveCompare:r] == NSOrderedSame) {
-            NSLog(@"a");
-        }
-        
-        
-        }
+//        if ([n caseInsensitiveCompare:w] == NSOrderedSame) {
+//            
+//            NSLog(@"результат сравнения");
+//        }
+ 
     }
-    return 0;
 }
+
+
