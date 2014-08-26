@@ -6,7 +6,7 @@ int main(int argc, const char * argv[]) {
 
         NSString *wordString;
         NSString *nameString;
-        NSMutableArray *compareArray;
+        NSMutableArray *compareArray = [[NSMutableArray alloc]init];
         
         nameString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/names.txt" encoding:NSUTF8StringEncoding error:NULL];
         wordString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/words.txt" encoding:NSUTF8StringEncoding error:NULL];
@@ -18,9 +18,9 @@ int main(int argc, const char * argv[]) {
             for (NSString *w in words) {
                 if ([n caseInsensitiveCompare:w] == NSOrderedSame) {
                     [compareArray addObject:n];
-                    NSLog(@"Совпадают: %@", n);
+                    NSLog(@"Совпадают: %@", compareArray);
                 } else {
-                    NSLog(@"Не совпадают: %@", w);
+
                 }
             }
         }
