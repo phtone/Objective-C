@@ -6,39 +6,24 @@ int main(int argc, const char * argv[]) {
 
         NSString *wordString;
         NSString *nameString;
-        NSRange namesRange;
-        NSRange wordsRange;
+        NSMutableArray *compareArray;
         
-        nameString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/names.txt" encoding:NSUTF8StringEncoding
-                                                            error:NULL];
+        nameString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/names.txt" encoding:NSUTF8StringEncoding error:NULL];
+        wordString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/words.txt" encoding:NSUTF8StringEncoding error:NULL];
         
         NSArray *names = [nameString componentsSeparatedByString:@"\n"];
-        
-        for (NSString *n in names) {
-            
-            namesRange = [n rangeOfString:@"AA" options:NSCaseInsensitiveSearch];
-            NSLog(@"Файл name: %@", n);
-            
-        }
-        
-        wordString = [NSString stringWithContentsOfFile:@"/Users/phtone/Documents/words.txt" encoding:NSUTF8StringEncoding
-                                                            error:NULL];
-        
         NSArray *words = [wordString componentsSeparatedByString:@"\n"];
         
-        for (NSString *w in words) {
-            
-            wordsRange = [w rangeOfString:n options:NSCaseInsensitiveSearch];
-            NSLog(@"Файл word: %@", w);
-            
+        for (NSString *n in names) {
+            for (NSString *w in words) {
+                if ([n caseInsensitiveCompare:w] == NSOrderedSame) {
+                    [compareArray addObject:n];
+                    NSLog(@"Совпадают: %@", n);
+                } else {
+                    NSLog(@"Не совпадают: %@", w);
+                }
+            }
         }
-        
-//        if ([n caseInsensitiveCompare:w] == NSOrderedSame) {
-//            
-//            NSLog(@"результат сравнения");
-//        }
- 
+        return 0;
     }
 }
-
-
