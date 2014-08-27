@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0985EDD0-9C37-48AA-8DCD-1B35E5368304</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Stocks</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C9B0CBD7010B41056E0A9612A8CCFB86336F69E3</key>
+		<string>git://github.com/phtone/Objective-C</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Stocks/Stocks.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C9B0CBD7010B41056E0A9612A8CCFB86336F69E3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git://github.com/phtone/Objective-C</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C9B0CBD7010B41056E0A9612A8CCFB86336F69E3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C9B0CBD7010B41056E0A9612A8CCFB86336F69E3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Objective-C</string>
+		</dict>
+	</array>
+</dict>
+</plist>
