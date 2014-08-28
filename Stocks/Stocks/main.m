@@ -19,15 +19,27 @@ int main(int argc, const char * argv[]) {
         [stock1 setCurrentSharePrice:32.5];
         [stock1 setNumberOfShares:10];
         
-        float value = [stock1 valueInDolars];
-        float cost = [stock1 costInDollars];
+        [stock2 setPurchaseSharePrice:22.5];
+        [stock2 setCurrentSharePrice:10.3];
+        [stock2 setNumberOfShares:5];
         
+        [stock3 setPurchaseSharePrice:45.9];
+        [stock3 setCurrentSharePrice:41.3];
+        [stock3 setNumberOfShares:9];
         
         [array addObject:stock1];
         [array addObject:stock2];
         [array addObject:stock3];
         
-        NSLog(@"%f stok1 %f", value, cost);
+//        float value = [stock1 valueInDolars];
+//        float cost = [stock1 costInDollars];
+        
+        
+        for (NSMutableArray *a in array) {
+            
+        
+        }
+        
     }
     return 0;
 }
