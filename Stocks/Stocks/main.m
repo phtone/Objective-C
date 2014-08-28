@@ -31,14 +31,21 @@ int main(int argc, const char * argv[]) {
         [array addObject:stock2];
         [array addObject:stock3];
         
-//        float value = [stock1 valueInDolars];
-//        float cost = [stock1 costInDollars];
+        float value = [stock1 valueInDolars];
+        float cost = [stock1 costInDollars];
         
-        
-        for (NSMutableArray *a in array) {
+
+        for (int i = 0, i < [array count], i++) {
             
-        
+            [array objectAtIndex:i];
         }
+        
+//        for (NSArray *a in array) {
+//            
+//            [a valueInDolars];
+//            NSLog(@"%@", a);
+//            
+//        }
         
     }
     return 0;
