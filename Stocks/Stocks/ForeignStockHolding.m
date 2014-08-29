@@ -10,4 +10,21 @@
 
 @implementation ForeignStockHolding
 
+@synthesize conversionRate;
+
+- (float)valueInDolars {
+    
+//    float localСurrencyCost = self.valueInDolars;
+    float localСurrencyCost = [super valueInDolars];
+    return localСurrencyCost * conversionRate;
+}
+
+- (float)costInDollars {
+    
+//    float localCurrencyValue = self.costInDollars;
+    float localCurrencyValue = [super costInDollars];
+    return localCurrencyValue * conversionRate;
+    
+}
+
 @end

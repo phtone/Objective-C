@@ -1,6 +1,8 @@
 
 #import <Foundation/Foundation.h>
 #import "StockHolding.h"
+#import "ForeignStockHolding.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -9,6 +11,8 @@ int main(int argc, const char * argv[]) {
         StockHolding *stock2 = [[StockHolding alloc]init];
         StockHolding *stock3 = [[StockHolding alloc]init];
         
+        ForeignStockHolding *stock4 = [[ForeignStockHolding alloc]init];
+        ForeignStockHolding *stock5 = [[ForeignStockHolding alloc]init];
         
         NSMutableArray *array = [[NSMutableArray alloc]init];
         
@@ -24,22 +28,26 @@ int main(int argc, const char * argv[]) {
         [stock3 setCurrentSharePrice:41.3];
         [stock3 setNumberOfShares:9];
         
+        [stock4 setPurchaseSharePrice:2.30];
+        [stock4 setConversionRate:4.50];
+        [stock4 setNumberOfShares:40];
+        [stock4 setConversionRate:0.94];
+        
+        [stock5 setPurchaseSharePrice:2.40];
+        [stock5 setConversionRate:4.90];
+        [stock5 setNumberOfShares:60];
+        [stock5 setConversionRate:2.94];
+        
         [array addObject:stock1];
         [array addObject:stock2];
         [array addObject:stock3];
-        
-
-//        for (int i = 0; i < [array count]; i++) {
-//
-//            StockHolding *stock = [array objectAtIndex:i];
-//            
-//            NSLog(@"%f & %f", stock.valueInDolars, stock.currentSharePrice);
-//            
-//        }
+        [array addObject:stock4];
+        [array addObject:stock5];
         
         for (StockHolding *stock in array) {
             
-            NSLog(@"%f & %f", [stock valueInDolars], [stock costInDollars]);
+            NSLog(@"Cost dollar %f & Value dollar %f", [stock valueInDolars], [stock costInDollars]);
+            
         }
         
     }

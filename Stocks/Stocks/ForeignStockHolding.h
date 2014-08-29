@@ -8,6 +8,11 @@
 
 #import "StockHolding.h"
 
-@interface ForeignStockHolding : StockHolding
+@interface ForeignStockHolding : StockHolding {
+    
+    float conversionRate;
+}
+
+@property float conversionRate;
 
 @end
