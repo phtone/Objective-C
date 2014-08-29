@@ -29,21 +29,18 @@ int main(int argc, const char * argv[]) {
         [array addObject:stock3];
         
 
-        for (int i = 0; i < [array count]; i++) {
-
-            StockHolding *stock = [array objectAtIndex:i];
-            
-            NSLog(@"%f & %f", stock.valueInDolars, stock.currentSharePrice);
-            
-        }
-        
-//        for (NSArray *a in array) {
+//        for (int i = 0; i < [array count]; i++) {
+//
+//            StockHolding *stock = [array objectAtIndex:i];
 //            
-//            StockHolding *stock0 = [array objectAtIndex:a];
-//            
-//            NSLog(@"%f and %f", [stock0 valueInDolars], [stock0 costInDollars]);
+//            NSLog(@"%f & %f", stock.valueInDolars, stock.currentSharePrice);
 //            
 //        }
+        
+        for (StockHolding *stock in array) {
+            
+            NSLog(@"%f & %f", [stock valueInDolars], [stock costInDollars]);
+        }
         
     }
     return 0;
