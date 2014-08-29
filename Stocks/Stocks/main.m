@@ -8,9 +8,6 @@ int main(int argc, const char * argv[]) {
         StockHolding *stock1 = [[StockHolding alloc]init];
         StockHolding *stock2 = [[StockHolding alloc]init];
         StockHolding *stock3 = [[StockHolding alloc]init];
-//        NSMutableArray *stock1 = [[StockHolding alloc]init];
-//        NSMutableArray *stock2 = [[StockHolding alloc]init];
-//        NSMutableArray *stock3 = [[StockHolding alloc]init];
         
         
         NSMutableArray *array = [[NSMutableArray alloc]init];
@@ -31,24 +28,20 @@ int main(int argc, const char * argv[]) {
         [array addObject:stock2];
         [array addObject:stock3];
         
-//        float value = [stock1 valueInDolars];
-//        float cost = [stock1 costInDollars];
-        
 
-        for (int i; i < [array count]; i++) {
+        for (int i = 0; i < [array count]; i++) {
 
             StockHolding *stock = [array objectAtIndex:i];
-//            [stock valueInDolars];
-//            [stock costInDollars];
             
-            NSLog(@"%f and %f", stock.valueInDolars, stock.currentSharePrice);
-//            [array objectAtIndex:i];
+            NSLog(@"%f & %f", stock.valueInDolars, stock.currentSharePrice);
+            
         }
         
 //        for (NSArray *a in array) {
 //            
-//            [a valueInDolars];
-//            NSLog(@"%@", a);
+//            StockHolding *stock0 = [array objectAtIndex:a];
+//            
+//            NSLog(@"%f and %f", [stock0 valueInDolars], [stock0 costInDollars]);
 //            
 //        }
         

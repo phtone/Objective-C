@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C05A13C19B0A1DE00E9941B /* ForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C05A13B19B0A1DE00E9941B /* ForeignStockHolding.m */; };
 		7C15EF0B19AE66700059B519 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15EF0A19AE66700059B519 /* main.m */; };
 		7C15EF1319AE67140059B519 /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15EF1219AE67140059B519 /* StockHolding.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7C05A13A19B0A1DE00E9941B /* ForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeignStockHolding.h; sourceTree = "<group>"; };
+		7C05A13B19B0A1DE00E9941B /* ForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeignStockHolding.m; sourceTree = "<group>"; };
 		7C15EF0719AE66700059B519 /* Stocks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stocks; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C15EF0A19AE66700059B519 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C15EF1119AE67140059B519 /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 				7C15EF1119AE67140059B519 /* StockHolding.h */,
 				7C15EF1219AE67140059B519 /* StockHolding.m */,
 				7C15EF0A19AE66700059B519 /* main.m */,
+				7C05A13A19B0A1DE00E9941B /* ForeignStockHolding.h */,
+				7C05A13B19B0A1DE00E9941B /* ForeignStockHolding.m */,
 			);
 			path = Stocks;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C05A13C19B0A1DE00E9941B /* ForeignStockHolding.m in Sources */,
 				7C15EF1319AE67140059B519 /* StockHolding.m in Sources */,
 				7C15EF0B19AE66700059B519 /* main.m in Sources */,
 			);
@@ -238,6 +244,7 @@
 				7C15EF1019AE66700059B519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
