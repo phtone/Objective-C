@@ -31,13 +31,18 @@ int main(int argc, const char * argv[]) {
         [array addObject:stock2];
         [array addObject:stock3];
         
-        float value = [stock1 valueInDolars];
-        float cost = [stock1 costInDollars];
+//        float value = [stock1 valueInDolars];
+//        float cost = [stock1 costInDollars];
         
 
-        for (int i = 0, i < [array count], i++) {
+        for (int i; i < [array count]; i++) {
+
+            StockHolding *stock = [array objectAtIndex:i];
+//            [stock valueInDolars];
+//            [stock costInDollars];
             
-            [array objectAtIndex:i];
+            NSLog(@"%f and %f", stock.valueInDolars, stock.currentSharePrice);
+//            [array objectAtIndex:i];
         }
         
 //        for (NSArray *a in array) {
