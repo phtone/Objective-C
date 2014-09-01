@@ -4,14 +4,16 @@
 @implementation StockHolding
 @synthesize purchaseSharePrice, currentSharePrice, numberOfShares;
 
-//стоимость
+    // стоимость
 - (float)costInDollars {
     
+    // self используется тогда, когда
+    // объект хочет отправить сообщение самому себе.
     float numberPurchase = self.purchaseSharePrice;
     return numberPurchase * numberOfShares;
 }
 
-//значение
+    // значение
 - (float)valueInDolars {
     
     float numberCurrent = self.currentSharePrice;

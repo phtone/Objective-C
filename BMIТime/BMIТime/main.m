@@ -1,19 +1,20 @@
-#import <Cocoa/Cocoa.h>
-#import "AppDelegate.h"
+#import <Foundation/Foundation.h>
+#import "Employee.h"
 
 int main(int argc, const char * argv[]) {
 
 
     @autoreleasepool {
                 
-        AppDelegate *appdelegate = [[AppDelegate alloc]init];
+        Employee *person = [[Employee alloc]init];
         
-        [appdelegate setWeightInKilos:96];
-        [appdelegate setHeightInMeters:1.8];
+        [person setWeightInKilos:96];
+        [person setHeightInMeters:1.8];
+        [person setEmployeeID:15];
         
         
-        float bmi = [appdelegate bodyMassIndex];
-
+        float bmi = [person bodyMassIndex];
+        
             if (bmi >= 0 && bmi <= 16) {
                 NSLog(@"Выраженный дефицит массы тела");
             }
@@ -35,6 +36,8 @@ int main(int argc, const char * argv[]) {
             if (bmi >= 40 && bmi <= 100) {
                 NSLog(@"Ожирение третьей степени (морбидное)");
             }
+        NSLog(@"Порядковый номер: %d", [person employeeID]);
+        
         }
     
     return 0;

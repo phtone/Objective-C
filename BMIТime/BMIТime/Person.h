@@ -1,6 +1,6 @@
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate> {
+@interface Person : NSObject  {
 
     float heightInMeters;
     int weightInKilos;

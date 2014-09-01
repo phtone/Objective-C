@@ -1,10 +1,3 @@
-//
-//  ForeignStockHolding.m
-//  Stocks
-//
-//  Created by phtone on 29.08.14.
-//  Copyright (c) 2014 phtone. All rights reserved.
-//
 
 #import "ForeignStockHolding.h"
 
@@ -14,14 +7,15 @@
 
 - (float)valueInDolars {
     
-//    float localСurrencyCost = self.valueInDolars;
     float localСurrencyCost = [super valueInDolars];
     return localСurrencyCost * conversionRate;
 }
 
 - (float)costInDollars {
+   
+    // super - Вьполнитъ этот метод, но начать
+    // поиск реализации с моего супер класса
     
-//    float localCurrencyValue = self.costInDollars;
     float localCurrencyValue = [super costInDollars];
     return localCurrencyValue * conversionRate;
     

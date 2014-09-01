@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C9503B319B4F8F70000A8BA /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9503B219B4F8F70000A8BA /* Employee.m */; };
 		7CB4658D19A3DA89000C7B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB4658C19A3DA89000C7B6D /* main.m */; };
-		7CB4659019A3DA89000C7B6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB4658F19A3DA89000C7B6D /* AppDelegate.m */; };
+		7CB4659019A3DA89000C7B6D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB4658F19A3DA89000C7B6D /* Person.m */; };
 		7CB4659219A3DA89000C7B6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB4659119A3DA89000C7B6D /* Images.xcassets */; };
 		7CB4659519A3DA89000C7B6D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB4659319A3DA89000C7B6D /* MainMenu.xib */; };
 		7CB465A119A3DA89000C7B6D /* BMI_imeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB465A019A3DA89000C7B6D /* BMI_imeTests.m */; };
@@ -25,11 +26,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C9503B119B4F8F70000A8BA /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Employee.h; path = ../Employee.h; sourceTree = "<group>"; };
+		7C9503B219B4F8F70000A8BA /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Employee.m; path = ../Employee.m; sourceTree = "<group>"; };
 		7CB4658719A3DA89000C7B6D /* BMIТime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMIТime.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB4658B19A3DA89000C7B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB4658C19A3DA89000C7B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7CB4658E19A3DA89000C7B6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7CB4658F19A3DA89000C7B6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CB4658E19A3DA89000C7B6D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		7CB4658F19A3DA89000C7B6D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		7CB4659119A3DA89000C7B6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7CB4659419A3DA89000C7B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7CB4659A19A3DA89000C7B6D /* BMIТimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BMIТimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,8 +79,10 @@
 		7CB4658919A3DA89000C7B6D /* BMIТime */ = {
 			isa = PBXGroup;
 			children = (
-				7CB4658E19A3DA89000C7B6D /* AppDelegate.h */,
-				7CB4658F19A3DA89000C7B6D /* AppDelegate.m */,
+				7CB4658E19A3DA89000C7B6D /* Person.h */,
+				7CB4658F19A3DA89000C7B6D /* Person.m */,
+				7C9503B119B4F8F70000A8BA /* Employee.h */,
+				7C9503B219B4F8F70000A8BA /* Employee.m */,
 				7CB4659119A3DA89000C7B6D /* Images.xcassets */,
 				7CB4659319A3DA89000C7B6D /* MainMenu.xib */,
 				7CB4658A19A3DA89000C7B6D /* Supporting Files */,
@@ -210,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB4659019A3DA89000C7B6D /* AppDelegate.m in Sources */,
+				7CB4659019A3DA89000C7B6D /* Person.m in Sources */,
+				7C9503B319B4F8F70000A8BA /* Employee.m in Sources */,
 				7CB4658D19A3DA89000C7B6D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +404,7 @@
 				7CB465A619A3DA89000C7B6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CB465A719A3DA89000C7B6D /* Build configuration list for PBXNativeTarget "BMIТimeTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +413,7 @@
 				7CB465A919A3DA89000C7B6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

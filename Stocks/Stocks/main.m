@@ -29,12 +29,12 @@ int main(int argc, const char * argv[]) {
         [stock3 setNumberOfShares:9];
         
         [stock4 setPurchaseSharePrice:2.30];
-        [stock4 setConversionRate:4.50];
+        [stock4 setCurrentSharePrice:4.50];
         [stock4 setNumberOfShares:40];
         [stock4 setConversionRate:0.94];
         
         [stock5 setPurchaseSharePrice:2.40];
-        [stock5 setConversionRate:4.90];
+        [stock5 setCurrentSharePrice:4.90];
         [stock5 setNumberOfShares:60];
         [stock5 setConversionRate:2.94];
         
@@ -46,7 +46,7 @@ int main(int argc, const char * argv[]) {
         
         for (StockHolding *stock in array) {
             
-            NSLog(@"Cost dollar %f & Value dollar %f", [stock valueInDolars], [stock costInDollars]);
+            NSLog(@"Cost dollar %f and Value dollar %f", [stock valueInDolars], [stock costInDollars]);
             
         }
         

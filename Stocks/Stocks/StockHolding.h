@@ -5,7 +5,7 @@
     
     float purchaseSharePrice;
     float currentSharePrice;
- //кол-во акций
+    // кол-во акций
     int numberOfShares;
 }
 

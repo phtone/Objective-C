@@ -1,12 +1,10 @@
-#import "AppDelegate.h"
+#import "Person.h"
 
-@interface AppDelegate ()
-
-@property (weak) IBOutlet NSWindow *window;
+@interface Person ()
 
 @end
 
-@implementation AppDelegate
+@implementation Person
 
 @synthesize heightInMeters, weightInKilos;
     
