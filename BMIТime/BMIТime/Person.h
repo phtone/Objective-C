@@ -9,7 +9,9 @@
 @property float heightInMeters;
 @property int weightInKilos;
 
--(float)bodyMassIndex;
+- (float)bodyMassIndex;
+
+
 
 @end
 

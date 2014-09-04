@@ -1,13 +1,14 @@
-//
-//  Asset.h
-//  BMIТime
-//
-//  Created by phtone on 03.09.14.
-//  Copyright (c) 2014 phtone. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
-@interface Asset : NSObject
+@interface Asset : NSObject {
+    
+    NSString *label;
+    unsigned int resaleValue;
+    
+}
+
+@property (strong) NSString *label;
+@property unsigned int resaleValue;
 
 @end

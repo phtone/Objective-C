@@ -1,15 +1,11 @@
 #import "Person.h"
 
-@interface Person ()
-
-@end
 
 @implementation Person
 
 @synthesize heightInMeters, weightInKilos;
     
-    
--(float)bodyMassIndex {
+- (float)bodyMassIndex {
     
     float height = [self heightInMeters];
     int weight = [self weightInKilos];

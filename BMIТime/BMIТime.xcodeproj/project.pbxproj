@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C4D288B19B7A7330044E607 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D288A19B7A7330044E607 /* Asset.m */; };
 		7C9503B319B4F8F70000A8BA /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9503B219B4F8F70000A8BA /* Employee.m */; };
 		7CB4658D19A3DA89000C7B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB4658C19A3DA89000C7B6D /* main.m */; };
 		7CB4659019A3DA89000C7B6D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB4658F19A3DA89000C7B6D /* Person.m */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C4D288919B7A7330044E607 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Asset.h; path = ../Asset.h; sourceTree = "<group>"; };
+		7C4D288A19B7A7330044E607 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Asset.m; path = ../Asset.m; sourceTree = "<group>"; };
 		7C9503B119B4F8F70000A8BA /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Employee.h; path = ../Employee.h; sourceTree = "<group>"; };
 		7C9503B219B4F8F70000A8BA /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Employee.m; path = ../Employee.m; sourceTree = "<group>"; };
 		7CB4658719A3DA89000C7B6D /* BMIТime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMIТime.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +86,8 @@
 				7CB4658F19A3DA89000C7B6D /* Person.m */,
 				7C9503B119B4F8F70000A8BA /* Employee.h */,
 				7C9503B219B4F8F70000A8BA /* Employee.m */,
+				7C4D288919B7A7330044E607 /* Asset.h */,
+				7C4D288A19B7A7330044E607 /* Asset.m */,
 				7CB4659119A3DA89000C7B6D /* Images.xcassets */,
 				7CB4659319A3DA89000C7B6D /* MainMenu.xib */,
 				7CB4658A19A3DA89000C7B6D /* Supporting Files */,
@@ -217,6 +222,7 @@
 			files = (
 				7CB4659019A3DA89000C7B6D /* Person.m in Sources */,
 				7C9503B319B4F8F70000A8BA /* Employee.m in Sources */,
+				7C4D288B19B7A7330044E607 /* Asset.m in Sources */,
 				7CB4658D19A3DA89000C7B6D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,45 +1,51 @@
 #import <Foundation/Foundation.h>
 #import "Employee.h"
+#import "Asset.h"
 
 int main(int argc, const char * argv[]) {
 
 
     @autoreleasepool {
                 
+        NSMutableArray *employees = [[NSMutableArray alloc]init];
+        
+        for (int i = 0; i < 10; i++) {
+        
         Employee *person = [[Employee alloc]init];
         
-        [person setWeightInKilos:96];
-        [person setHeightInMeters:1.8];
-        [person setEmployeeID:15];
-        
-        
-        float bmi = [person bodyMassIndex];
-        
-            if (bmi >= 0 && bmi <= 16) {
-                NSLog(@"Выраженный дефицит массы тела");
-            }
-            if (bmi >= 16 && bmi <= 18.5) {
-                NSLog(@"Недостаточная (дефицит) масса тела");
-            }
-            if (bmi >= 18.5 && bmi <= 25) {
-                NSLog(@"Норма");
-            }
-            if (bmi >= 25 && bmi <= 30) {
-                NSLog(@"Избыточная масса тела (предожирение)");
-            }
-            if (bmi >= 30 && bmi <= 35) {
-                NSLog(@"Ожирение первой степени");
-            }
-            if (bmi >= 35 && bmi <= 40) {
-                NSLog(@"Ожирение второй степени");
-            }
-            if (bmi >= 40 && bmi <= 100) {
-                NSLog(@"Ожирение третьей степени (морбидное)");
-            }
-        NSLog(@"Порядковый номер: %d", [person employeeID]);
+        [person setWeightInKilos:90 + 1];
+        [person setHeightInMeters:1.8 - i/10.0];
+        [person setEmployeeID:i];
+            
+        [employees addObject:person];
         
         }
-    
-    return 0;
+
+        for (int i = 0; i < 30; i++) {
+            
+            Asset *asset = [[Asset alloc]init];
+            
+            NSString *currentLabel = [NSString stringWithFormat:@"Laptop %d", i];
+            
+            [asset setLabel:currentLabel];
+            [asset setResaleValue:i * 17];
+            
+            NSUInteger randomIndex = random() % [employees count];
+            
+            Employee *randomEmployees = [employees objectAtIndex:randomIndex];
+            
+            [randomEmployees addAssetsObject:asset];
+            
+            NSLog(@"Employees: %@", employees);
+            NSLog(@"Giving up#ownership of one employee");
+            
+            [employees removeObjectAtIndex:5];
+            
+            NSLog(@"Giving up ownership of array");
+            
+            employees = nil;
+        }
+        return 0;
+    }
 }
-          
+
