@@ -10,6 +10,7 @@
 		7C05A13C19B0A1DE00E9941B /* ForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C05A13B19B0A1DE00E9941B /* ForeignStockHolding.m */; };
 		7C15EF0B19AE66700059B519 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15EF0A19AE66700059B519 /* main.m */; };
 		7C15EF1319AE67140059B519 /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C15EF1219AE67140059B519 /* StockHolding.m */; };
+		7CA8432B19F6E1D600063A35 /* Portfolio.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA8432A19F6E1D600063A35 /* Portfolio.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		7C15EF0A19AE66700059B519 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C15EF1119AE67140059B519 /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
 		7C15EF1219AE67140059B519 /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHolding.m; sourceTree = "<group>"; };
+		7CA8432919F6E1D600063A35 /* Portfolio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Portfolio.h; sourceTree = "<group>"; };
+		7CA8432A19F6E1D600063A35 /* Portfolio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Portfolio.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				7C15EF1119AE67140059B519 /* StockHolding.h */,
 				7C15EF1219AE67140059B519 /* StockHolding.m */,
 				7C15EF0A19AE66700059B519 /* main.m */,
+				7CA8432919F6E1D600063A35 /* Portfolio.h */,
+				7CA8432A19F6E1D600063A35 /* Portfolio.m */,
 				7C05A13A19B0A1DE00E9941B /* ForeignStockHolding.h */,
 				7C05A13B19B0A1DE00E9941B /* ForeignStockHolding.m */,
 			);
@@ -106,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7C15EF0219AE66700059B519 /* Build configuration list for PBXProject "Stocks" */;
+			buildConfigurationList = 7C15EF0219AE66700059B519 /* Build configuration list for PBXProject "stocks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA8432B19F6E1D600063A35 /* Portfolio.m in Sources */,
 				7C05A13C19B0A1DE00E9941B /* ForeignStockHolding.m in Sources */,
 				7C15EF1319AE67140059B519 /* StockHolding.m in Sources */,
 				7C15EF0B19AE66700059B519 /* main.m in Sources */,
@@ -228,7 +234,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C15EF0219AE66700059B519 /* Build configuration list for PBXProject "Stocks" */ = {
+		7C15EF0219AE66700059B519 /* Build configuration list for PBXProject "stocks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C15EF0C19AE66700059B519 /* Debug */,

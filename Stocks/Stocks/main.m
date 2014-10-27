@@ -3,6 +3,8 @@
 #import "StockHolding.h"
 #import "ForeignStockHolding.h"
 
+#import "Portfolio.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -49,6 +51,13 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Cost dollar %f and Value dollar %f", [stock valueInDolars], [stock costInDollars]);
             
         }
+        
+        Portfolio *portfolio = [[Portfolio alloc] init];
+        [portfolio addPortfolioStockObj:stock1];
+        
+        NSLog(@"Portfolio value %f", [portfolio valueOfPortfolio]);
+        
+        
         
     }
     return 0;
